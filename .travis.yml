@@ -4,7 +4,7 @@ before_script:
   - cp config/database.travis.yml config/database.yml
   - bundle exec rake db:create
   - npm install
-  - sudo add-apt-repository ppa:git-core/ppa && sudo apt-get update && sudo apt-get install git
+  - sudo add-apt-repository -y ppa:git-core/ppa && sudo apt-get update && sudo apt-get -y install git
 env:
   matrix:
     - DB=sqlite BUNDLE_WITHOUT=mysql2:postgresql
