@@ -52,7 +52,7 @@ class GitRepository
   end
 
   def tags
-    cmd = 'git describe --tags --abbrev=0 `git rev-list --tags --max-count=600`'
+    cmd = 'git tag --sort=-version:refname | head -600'
     run_single_command(cmd) { |line| line.strip }
   end
 
