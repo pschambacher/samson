@@ -30,7 +30,7 @@ Streaming is done through a [controller](app/controllers/streams_controller.rb) 
 
 * MySQL, Postgresql, or SQLite
 * Memcache
-* Ruby (currently 2.1.1)
+* Ruby (currently 2.1.5) or Rubinius
 
 #### Setup
 
@@ -188,8 +188,8 @@ automatically.
 
 ### Instrumentation
 
-Samson sends StatsD basic web request metrics and metrics about deploys and threads 
-in use. Statsd silently disables itself if no agent is running on the host. All 
+Samson sends StatsD basic web request metrics and metrics about deploys and threads
+in use. Statsd silently disables itself if no agent is running on the host. All
 metrics collected are prepending with 'samson.app'.
 
 ### Contributing

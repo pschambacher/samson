@@ -75,7 +75,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'byebug'
+  gem 'byebug', platforms: [:mri]
 end
 
 group :test do

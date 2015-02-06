@@ -22,5 +22,7 @@ cache:
   bundler: true
   directories:
     - node_modules
-rvm: 2.1.5
+rvm:
+  - 2.1.5
+  - rbx-2
 sudo: false
